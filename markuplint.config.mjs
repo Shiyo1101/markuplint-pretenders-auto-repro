@@ -1,0 +1,6 @@
+export default {
+  parser: {'\\.tsx$': '@markuplint/jsx-parser'},
+  specs: {'\\.tsx$': '@markuplint/react-spec'},
+  extends: ['markuplint:recommended-react'],
+  pretenders: {auto: true},
+};

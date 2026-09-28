@@ -1,0 +1,21 @@
+{
+  "name": "markuplint-pretenders-auto-repro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "reproduce": "markuplint 'src/usage.tsx' --no-color --no-progressive-output",
+    "control": "markuplint 'src/usage.tsx' --config markuplint.no-auto.config.mjs --no-color --no-progressive-output",
+    "scan": "node scripts/show-pretenders.mjs"
+  },
+  "devDependencies": {
+    "@markuplint/jsx-parser": "5.0.0",
+    "@markuplint/pretenders": "5.0.0",
+    "@markuplint/react-spec": "5.0.0",
+    "markuplint": "5.0.0",
+    "typescript": "6.0.3"
+  }
+}
